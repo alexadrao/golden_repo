@@ -11,3 +11,8 @@ file for html files to work.
 
 #add <script defer src="bundle.js"></script><link href="dist.bundle.css" rel="stylesheet"> on top of 
 every html file so it processes js and css.
+
+#add components folder with left_menu.html
+
+#add pages folder with bookings.html and reservations.html
+

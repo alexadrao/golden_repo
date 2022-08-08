@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="bundle.js"></script><link href="dist.bundle.css" rel="stylesheet"></head>
+    <title>Sun Buggy</title>
+  </head>
+  <body>
+
+    
+    <div id="main" class="flex flex-col lg:w-64 h-screen px-4 py-8 bg-white border-r dark:bg-gray-800 dark:border-gray-600"  >
+    
+        <div class="lg">
+            <script>
+            var menu = document.getElementById('menu');
+            function toggleMenu() {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('w-full');
+                menu.classList.toggle('h-screen');
+            }
+            </script>
+
+            <button class="p-2" onclick="toggleMenu()";>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  class="w-5 h-5 fill-current dark:text-gray-100">
+                    <rect width="352" height="32" x="80" y="96"></rect>
+                    <rect width="352" height="32" x="80" y="240"></rect>
+                    <rect width="352" height="32" x="80" y="384"></rect>
+                </svg>
+            </button>
+        </div>
+
+      <h2 class="text-3xl font-semibold text-gray-800 dark:text-white">Menu</h2>
+
+      <div class="relative mt-6">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+          </span>
+
+          <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" placeholder="Search"/>
+      </div>
+      
+      <div class="flex flex-col justify-between flex-1 mt-6">
+          <nav>
+              <a class="flex items-center px-4 py-2 text-orange-700 bg-orange-200 rounded-md dark:bg-gray-700 dark:text-gray-200" href="#">
+                  <span class="mx-4 font-medium">Dashboard</span>
+              </a>
+              
+
+              <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-orange-200 dark:hover:bg-orange-700 dark:hover:text-gray-200 hover:text-orange-700" href="../bookings.html">
+                  <span class="mx-4 font-medium">Bookings</span>
+              </a>
+
+              <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-orange-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 hover:text-orange-700" href="../reservations.html">
+                  <span class="mx-4 font-medium">Reservations</span>
+              </a>
+
+              <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-orange-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 hover:text-orange-700" href="#">
+                  <span class="mx-4 font-medium">Schedule</span>
+              </a>
+
+              <hr class="my-6 border-gray-200 dark:border-gray-600" />
+
+              <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-orange-200 dark:hover:bg-orange-700 dark:hover:text-orange-200 hover:text-orange-700" href="#">
+                  <span class="mx-4 font-medium">Dayview</span>
+              </a>
+
+              <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-orange-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 hover:text-orange-700" a href="https://apps.timeclockwizard.com/Login?Subdomain=sunbuggy">
+                  <span class="mx-4 font-medium">Clock-In/Out</span>
+              </a>
+          </nav>
+
+          <div class="flex items-center px-4 -mx-2">
+              <h4 class="mx-2 font-medium text-gray-800 dark:text-gray-200 hover:underline">Logout</h4>
+          </div>
+      </div>
+  </div>
+
+  </body>
+</html>
